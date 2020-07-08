@@ -57,19 +57,6 @@ class Notebook:
                                      textvariable=name)
         self.nameEntered.grid(column=1, row=0)
         
-        
-        
-        
-        # label = ttk.Label(frame,text=text)
-        # label.grid(column=0,row=0)
-        
-        # name = tk.StringVar()
-        # nameEntered = ttk.Entry(label, width=12, textvariable=name)
-        # nameEntered.grid(column=2, row=1, sticky="W")
-        
-        
-        self.notebook.pack()
-
 #-----------------------------------------------
 
 
@@ -90,7 +77,7 @@ win.configure(background="blue")
 nb = Notebook(win)
 
 #==========================
-# Create instance of notebook
+# Addt tab of notebook
 #==========================
 # First tab
 tab1 = "Tab one"
@@ -99,7 +86,7 @@ nb.addTab(tab1)
 nb.addLabelFrame(tab1)
 nb.addLabel(inputFields[0])
 
-#-----------------------------------------------
+
 # Second tab
 tab2 = "Tab two"
 inputFields = ["Layer name"]
@@ -108,6 +95,7 @@ nb.addLabelFrame(tab2)
 nb.addLabel(inputFields[0])
 
 print(nb.__dict__)
+#-----------------------------------------------
 
 #======================
 # Start GUI
